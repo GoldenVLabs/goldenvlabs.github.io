@@ -352,6 +352,23 @@
     font-family: 'Consolas', monospace;
   }
 
+  .project-screenshots {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .project-screenshots img {
+    width: 33.33%;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: top;
+    height: 160px;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
   .project-visual {
     background: var(--bg3);
     border-radius: 10px;
@@ -606,6 +623,11 @@
         Includes ride tracker, food guide, day planner, and custom birthday theme. 
         Deployed via EAS Update — no app store required.
       </p>
+      <div class="project-screenshots">
+        <img src="images/Screenshot_20260318-232634.png" alt="Today screen" />
+        <img src="images/Screenshot_20260318-232646.png" alt="Rides screen" />
+        <img src="images/Screenshot_20260318-232656.png" alt="Food screen" />
+      </div>
       <div class="project-stack">
         <span class="stack-tag">Expo</span>
         <span class="stack-tag">React Native</span>
@@ -699,7 +721,7 @@
     <div class="contact-links">
       <a href="https://github.com/GoldenVLabs" target="_blank" class="btn-primary">GitHub</a>
       <a href="https://www.linkedin.com/in/christopher-vancura/" target="_blank" class="btn-secondary">LinkedIn</a>
-      <a href="/cdn-cgi/l/email-protection#71121b07101f1204031031161c10181d5f121e1c" class="btn-secondary">Email</a>
+      <span class="btn-secondary" style="cursor:default;">cjvancura@gmail.com</span>
     </div>
   </div>
 </section>
